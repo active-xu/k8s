@@ -1,4 +1,4 @@
-ROM ubuntu:18.04
+FROM ubuntu:18.04
 # 更新软件源（这里用的是中科大的源，因为阿里云的源有个依赖无法下载）
 RUN echo 'deb http://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse' > /etc/apt/sources.list && \
     echo 'deb http://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse' >> /etc/apt/sources.list && \
